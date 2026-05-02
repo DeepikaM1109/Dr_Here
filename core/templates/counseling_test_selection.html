@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container py-5">
+    <h2 class="mb-4">Choose a Psychological Test</h2>
+    <ul class="list-group">
+        {% for test in tests %}
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                {{ test.name }} - {{ test.description }}
+                <a href="{% url 'core:take_counseling_test' test.id %}" class="btn btn-primary btn-sm">Take Test</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

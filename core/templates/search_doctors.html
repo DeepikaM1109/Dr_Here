@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container my-4">
+    <h2 class="mb-4">Search Doctors</h2>
+
+    <form id="search-form" method="GET" class="row g-3 align-items-center mb-4">
+        <div class="col-md-6">
+            <input type="text" name="specialization" id="specialization" placeholder="Search by Specialization" class="form-control">
+        </div>
+        <input type="hidden" id="latitude" name="latitude">
+        <input type="hidden" id="longitude" name="longitude">
+        <div class="col-auto">
+            <button type="submit" onclick="return validateSearch()" class="btn btn-primary">Search</button>
+        </div>
+    </form>
+
+    <hr>
+
+    {% if doctors %}
+        <h3 class="mt-4">Search Results</h3>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            {% for doctor in doctors %}
+                <div class="col">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ doctor.name }}</h5>
+                            <p class="card-text">
+                                <strong>Specialization:</strong> {{ doctor.specialization }}<br>
+                                <strong>Workplace:</strong> {{ doctor.workplace }}<br>
+                                <strong>Working Hours:</strong> {{ doctor.working_hours }}<br>
+                                <strong>Distance:</strong> {{ doctor.distance }} km
+                            </p>
+                            <a href="{% url 'core:doctor_profile' doctor.id %}" class="btn btn-info">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="alert alert-warning">No doctors found matching your criteria.</div>
+    {% endif %}
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                function (position) {
+                    document.getElementById("latitude").value = position.coords.latitude;
+                    document.getElementById("longitude").value = position.coords.longitude;
+                },
+                function (error) {
+                    console.error("Geolocation error:", error);
+                }
+            );
+        } else {
+            console.error("Geolocation is not supported by this browser.");
+        }
+    });
+
+    function validateSearch() {
+        var specialization = document.getElementById("specialization").value.trim();
+        if (specialization === "") {
+            alert("Please enter a specialization before searching.");
+            return false;  // Prevent form submission
+        }
+        return true;
+    }
+</script>
+
+{% endblock %}

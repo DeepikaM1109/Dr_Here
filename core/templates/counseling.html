@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Self-Assessment Test</h2>
+<form method="post">
+    {% csrf_token %}
+    <label>Stress Level (1-10):</label>
+    <input type="number" name="stress" min="0" max="10" required class="form-control mb-2">
+    <label>Anxiety Level (1-10):</label>
+    <input type="number" name="anxiety" min="0" max="10" required class="form-control mb-2">
+    <button type="submit" class="btn btn-info">Submit</button>
+</form>
+{% endblock %}

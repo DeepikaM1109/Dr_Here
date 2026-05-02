@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Search Doctors</h2>
+<form method="get">
+    <label>Specialization:</label>
+    <select name="specialization">
+        <option value="">All</option>
+        {% for spec in specializations %}
+            <option value="{{ spec }}">{{ spec }}</option>
+        {% endfor %}
+    </select>
+
+    <label>City:</label>
+    <select name="city">
+        <option value="">All</option>
+        {% for c in cities %}
+            <option value="{{ c }}">{{ c }}</option>
+        {% endfor %}
+    </select>
+
+    <button type="submit">Search</button>
+</form>
+
+<h3>Doctor List:</h3>
+<ul>
+    {% for doctor in doctors %}
+    <li>
+        <strong>{{ doctor.name }}</strong> - {{ doctor.specialization }} - {{ doctor.city }}<br>
+        Working at: {{ doctor.workplace }} | Timings: {{ doctor.working_time }}<br>
+        <a href="{% url 'doctor_detail' doctor.id %}">View Profile</a>
+    </li>
+    {% empty %}
+    <li>No doctors found.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

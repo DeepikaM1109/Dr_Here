@@ -1,0 +1,2242 @@
+[
+  {
+    "model": "core.counselingtest",
+    "pk": 1,
+    "fields": {
+      "name": "MMPI",
+      "description": "Assesses personality traits and psychopathology."
+    }
+  },
+  {
+    "model": "core.counselingtest",
+    "pk": 2,
+    "fields": {
+      "name": "BDI",
+      "description": "Evaluates symptoms of depression."
+    }
+  },
+  {
+    "model": "core.counselingtest",
+    "pk": 3,
+    "fields": {
+      "name": "Strong Interest Inventory",
+      "description": "Helps individuals identify career interests."
+    }
+  },
+  {
+    "model": "core.counselingtest",
+    "pk": 4,
+    "fields": {
+      "name": "Stanford-Binet",
+      "description": "Measures cognitive abilities."
+    }
+  },
+  {
+    "model": "core.counselingtest",
+    "pk": 5,
+    "fields": {
+      "name": "MBTI",
+      "description": "Assesses personality type and preferences."
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 1,
+    "fields": {
+      "test": 1,
+      "text": "I often feel tense or anxious."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 1,
+    "fields": {
+      "question": 1,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 2,
+    "fields": {
+      "question": 1,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 3,
+    "fields": {
+      "question": 1,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 4,
+    "fields": {
+      "question": 1,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 2,
+    "fields": {
+      "test": 1,
+      "text": "I prefer to be alone rather than with others."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 5,
+    "fields": {
+      "question": 2,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 6,
+    "fields": {
+      "question": 2,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 7,
+    "fields": {
+      "question": 2,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 8,
+    "fields": {
+      "question": 2,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 3,
+    "fields": {
+      "test": 1,
+      "text": "I worry about things too much."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 9,
+    "fields": {
+      "question": 3,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 10,
+    "fields": {
+      "question": 3,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 11,
+    "fields": {
+      "question": 3,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 12,
+    "fields": {
+      "question": 3,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 4,
+    "fields": {
+      "test": 1,
+      "text": "I feel sad or down most of the time."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 13,
+    "fields": {
+      "question": 4,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 14,
+    "fields": {
+      "question": 4,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 15,
+    "fields": {
+      "question": 4,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 16,
+    "fields": {
+      "question": 4,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 5,
+    "fields": {
+      "test": 1,
+      "text": "I find it hard to trust people."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 17,
+    "fields": {
+      "question": 5,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 18,
+    "fields": {
+      "question": 5,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 19,
+    "fields": {
+      "question": 5,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 20,
+    "fields": {
+      "question": 5,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 6,
+    "fields": {
+      "test": 1,
+      "text": "I enjoy being the center of attention."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 21,
+    "fields": {
+      "question": 6,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 22,
+    "fields": {
+      "question": 6,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 23,
+    "fields": {
+      "question": 6,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 24,
+    "fields": {
+      "question": 6,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 7,
+    "fields": {
+      "test": 1,
+      "text": "I feel like others are watching me."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 25,
+    "fields": {
+      "question": 7,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 26,
+    "fields": {
+      "question": 7,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 27,
+    "fields": {
+      "question": 7,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 28,
+    "fields": {
+      "question": 7,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 8,
+    "fields": {
+      "test": 1,
+      "text": "I get angry easily."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 29,
+    "fields": {
+      "question": 8,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 30,
+    "fields": {
+      "question": 8,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 31,
+    "fields": {
+      "question": 8,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 32,
+    "fields": {
+      "question": 8,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 9,
+    "fields": {
+      "test": 1,
+      "text": "I avoid social situations."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 33,
+    "fields": {
+      "question": 9,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 34,
+    "fields": {
+      "question": 9,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 35,
+    "fields": {
+      "question": 9,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 36,
+    "fields": {
+      "question": 9,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 10,
+    "fields": {
+      "test": 1,
+      "text": "I sometimes hear voices others do not."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 37,
+    "fields": {
+      "question": 10,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 38,
+    "fields": {
+      "question": 10,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 39,
+    "fields": {
+      "question": 10,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 40,
+    "fields": {
+      "question": 10,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 11,
+    "fields": {
+      "test": 2,
+      "text": "I feel hopeless about the future."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 41,
+    "fields": {
+      "question": 11,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 42,
+    "fields": {
+      "question": 11,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 43,
+    "fields": {
+      "question": 11,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 44,
+    "fields": {
+      "question": 11,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 12,
+    "fields": {
+      "test": 2,
+      "text": "I feel like a failure."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 45,
+    "fields": {
+      "question": 12,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 46,
+    "fields": {
+      "question": 12,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 47,
+    "fields": {
+      "question": 12,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 48,
+    "fields": {
+      "question": 12,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 13,
+    "fields": {
+      "test": 2,
+      "text": "I blame myself for everything bad."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 49,
+    "fields": {
+      "question": 13,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 50,
+    "fields": {
+      "question": 13,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 51,
+    "fields": {
+      "question": 13,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 52,
+    "fields": {
+      "question": 13,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 14,
+    "fields": {
+      "test": 2,
+      "text": "I have lost interest in most things."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 53,
+    "fields": {
+      "question": 14,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 54,
+    "fields": {
+      "question": 14,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 55,
+    "fields": {
+      "question": 14,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 56,
+    "fields": {
+      "question": 14,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 15,
+    "fields": {
+      "test": 2,
+      "text": "I struggle to make decisions."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 57,
+    "fields": {
+      "question": 15,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 58,
+    "fields": {
+      "question": 15,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 59,
+    "fields": {
+      "question": 15,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 60,
+    "fields": {
+      "question": 15,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 16,
+    "fields": {
+      "test": 2,
+      "text": "I feel fatigued most days."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 61,
+    "fields": {
+      "question": 16,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 62,
+    "fields": {
+      "question": 16,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 63,
+    "fields": {
+      "question": 16,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 64,
+    "fields": {
+      "question": 16,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 17,
+    "fields": {
+      "test": 2,
+      "text": "I feel worthless."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 65,
+    "fields": {
+      "question": 17,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 66,
+    "fields": {
+      "question": 17,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 67,
+    "fields": {
+      "question": 17,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 68,
+    "fields": {
+      "question": 17,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 18,
+    "fields": {
+      "test": 2,
+      "text": "I have thoughts of harming myself."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 69,
+    "fields": {
+      "question": 18,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 70,
+    "fields": {
+      "question": 18,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 71,
+    "fields": {
+      "question": 18,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 72,
+    "fields": {
+      "question": 18,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 19,
+    "fields": {
+      "test": 2,
+      "text": "I cry more than usual."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 73,
+    "fields": {
+      "question": 19,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 74,
+    "fields": {
+      "question": 19,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 75,
+    "fields": {
+      "question": 19,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 76,
+    "fields": {
+      "question": 19,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 20,
+    "fields": {
+      "test": 2,
+      "text": "I have trouble sleeping."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 77,
+    "fields": {
+      "question": 20,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 78,
+    "fields": {
+      "question": 20,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 79,
+    "fields": {
+      "question": 20,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 80,
+    "fields": {
+      "question": 20,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 21,
+    "fields": {
+      "test": 3,
+      "text": "I enjoy working with numbers."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 81,
+    "fields": {
+      "question": 21,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 82,
+    "fields": {
+      "question": 21,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 83,
+    "fields": {
+      "question": 21,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 84,
+    "fields": {
+      "question": 21,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 22,
+    "fields": {
+      "test": 3,
+      "text": "I like helping people solve their problems."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 85,
+    "fields": {
+      "question": 22,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 86,
+    "fields": {
+      "question": 22,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 87,
+    "fields": {
+      "question": 22,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 88,
+    "fields": {
+      "question": 22,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 23,
+    "fields": {
+      "test": 3,
+      "text": "I prefer hands-on tasks over desk work."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 89,
+    "fields": {
+      "question": 23,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 90,
+    "fields": {
+      "question": 23,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 91,
+    "fields": {
+      "question": 23,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 92,
+    "fields": {
+      "question": 23,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 24,
+    "fields": {
+      "test": 3,
+      "text": "I enjoy artistic activities."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 93,
+    "fields": {
+      "question": 24,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 94,
+    "fields": {
+      "question": 24,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 95,
+    "fields": {
+      "question": 24,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 96,
+    "fields": {
+      "question": 24,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 25,
+    "fields": {
+      "test": 3,
+      "text": "I like analyzing data."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 97,
+    "fields": {
+      "question": 25,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 98,
+    "fields": {
+      "question": 25,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 99,
+    "fields": {
+      "question": 25,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 100,
+    "fields": {
+      "question": 25,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 26,
+    "fields": {
+      "test": 3,
+      "text": "I am interested in leading a team."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 101,
+    "fields": {
+      "question": 26,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 102,
+    "fields": {
+      "question": 26,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 103,
+    "fields": {
+      "question": 26,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 104,
+    "fields": {
+      "question": 26,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 27,
+    "fields": {
+      "test": 3,
+      "text": "I like repairing mechanical things."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 105,
+    "fields": {
+      "question": 27,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 106,
+    "fields": {
+      "question": 27,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 107,
+    "fields": {
+      "question": 27,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 108,
+    "fields": {
+      "question": 27,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 28,
+    "fields": {
+      "test": 3,
+      "text": "I enjoy writing stories or articles."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 109,
+    "fields": {
+      "question": 28,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 110,
+    "fields": {
+      "question": 28,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 111,
+    "fields": {
+      "question": 28,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 112,
+    "fields": {
+      "question": 28,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 29,
+    "fields": {
+      "test": 3,
+      "text": "I am curious about how things work."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 113,
+    "fields": {
+      "question": 29,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 114,
+    "fields": {
+      "question": 29,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 115,
+    "fields": {
+      "question": 29,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 116,
+    "fields": {
+      "question": 29,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 30,
+    "fields": {
+      "test": 3,
+      "text": "I enjoy organizing events."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 117,
+    "fields": {
+      "question": 30,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 118,
+    "fields": {
+      "question": 30,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 119,
+    "fields": {
+      "question": 30,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 120,
+    "fields": {
+      "question": 30,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 31,
+    "fields": {
+      "test": 4,
+      "text": "I can easily solve puzzles."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 121,
+    "fields": {
+      "question": 31,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 122,
+    "fields": {
+      "question": 31,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 123,
+    "fields": {
+      "question": 31,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 124,
+    "fields": {
+      "question": 31,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 32,
+    "fields": {
+      "test": 4,
+      "text": "I remember facts quickly."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 125,
+    "fields": {
+      "question": 32,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 126,
+    "fields": {
+      "question": 32,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 127,
+    "fields": {
+      "question": 32,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 128,
+    "fields": {
+      "question": 32,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 33,
+    "fields": {
+      "test": 4,
+      "text": "I can explain complex ideas clearly."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 129,
+    "fields": {
+      "question": 33,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 130,
+    "fields": {
+      "question": 33,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 131,
+    "fields": {
+      "question": 33,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 132,
+    "fields": {
+      "question": 33,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 34,
+    "fields": {
+      "test": 4,
+      "text": "I learn new skills fast."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 133,
+    "fields": {
+      "question": 34,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 134,
+    "fields": {
+      "question": 34,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 135,
+    "fields": {
+      "question": 34,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 136,
+    "fields": {
+      "question": 34,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 35,
+    "fields": {
+      "test": 4,
+      "text": "I enjoy solving math problems."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 137,
+    "fields": {
+      "question": 35,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 138,
+    "fields": {
+      "question": 35,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 139,
+    "fields": {
+      "question": 35,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 140,
+    "fields": {
+      "question": 35,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 36,
+    "fields": {
+      "test": 4,
+      "text": "I can focus on tasks for long periods."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 141,
+    "fields": {
+      "question": 36,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 142,
+    "fields": {
+      "question": 36,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 143,
+    "fields": {
+      "question": 36,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 144,
+    "fields": {
+      "question": 36,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 37,
+    "fields": {
+      "test": 4,
+      "text": "I understand abstract ideas easily."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 145,
+    "fields": {
+      "question": 37,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 146,
+    "fields": {
+      "question": 37,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 147,
+    "fields": {
+      "question": 37,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 148,
+    "fields": {
+      "question": 37,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 38,
+    "fields": {
+      "test": 4,
+      "text": "I can think of multiple solutions to a problem."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 149,
+    "fields": {
+      "question": 38,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 150,
+    "fields": {
+      "question": 38,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 151,
+    "fields": {
+      "question": 38,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 152,
+    "fields": {
+      "question": 38,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 39,
+    "fields": {
+      "test": 4,
+      "text": "I quickly see patterns in data."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 153,
+    "fields": {
+      "question": 39,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 154,
+    "fields": {
+      "question": 39,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 155,
+    "fields": {
+      "question": 39,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 156,
+    "fields": {
+      "question": 39,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 40,
+    "fields": {
+      "test": 4,
+      "text": "I enjoy logical reasoning tasks."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 157,
+    "fields": {
+      "question": 40,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 158,
+    "fields": {
+      "question": 40,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 159,
+    "fields": {
+      "question": 40,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 160,
+    "fields": {
+      "question": 40,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 41,
+    "fields": {
+      "test": 5,
+      "text": "I enjoy spending time with others."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 161,
+    "fields": {
+      "question": 41,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 162,
+    "fields": {
+      "question": 41,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 163,
+    "fields": {
+      "question": 41,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 164,
+    "fields": {
+      "question": 41,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 42,
+    "fields": {
+      "test": 5,
+      "text": "I prefer routine to spontaneity."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 165,
+    "fields": {
+      "question": 42,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 166,
+    "fields": {
+      "question": 42,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 167,
+    "fields": {
+      "question": 42,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 168,
+    "fields": {
+      "question": 42,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 43,
+    "fields": {
+      "test": 5,
+      "text": "I rely more on facts than feelings."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 169,
+    "fields": {
+      "question": 43,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 170,
+    "fields": {
+      "question": 43,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 171,
+    "fields": {
+      "question": 43,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 172,
+    "fields": {
+      "question": 43,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 44,
+    "fields": {
+      "test": 5,
+      "text": "I make decisions based on logic."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 173,
+    "fields": {
+      "question": 44,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 174,
+    "fields": {
+      "question": 44,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 175,
+    "fields": {
+      "question": 44,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 176,
+    "fields": {
+      "question": 44,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 45,
+    "fields": {
+      "test": 5,
+      "text": "I prefer to plan rather than improvise."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 177,
+    "fields": {
+      "question": 45,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 178,
+    "fields": {
+      "question": 45,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 179,
+    "fields": {
+      "question": 45,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 180,
+    "fields": {
+      "question": 45,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 46,
+    "fields": {
+      "test": 5,
+      "text": "I focus on the big picture."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 181,
+    "fields": {
+      "question": 46,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 182,
+    "fields": {
+      "question": 46,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 183,
+    "fields": {
+      "question": 46,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 184,
+    "fields": {
+      "question": 46,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 47,
+    "fields": {
+      "test": 5,
+      "text": "I trust my intuition."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 185,
+    "fields": {
+      "question": 47,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 186,
+    "fields": {
+      "question": 47,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 187,
+    "fields": {
+      "question": 47,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 188,
+    "fields": {
+      "question": 47,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 48,
+    "fields": {
+      "test": 5,
+      "text": "I like having detailed instructions."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 189,
+    "fields": {
+      "question": 48,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 190,
+    "fields": {
+      "question": 48,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 191,
+    "fields": {
+      "question": 48,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 192,
+    "fields": {
+      "question": 48,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 49,
+    "fields": {
+      "test": 5,
+      "text": "I enjoy debating ideas."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 193,
+    "fields": {
+      "question": 49,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 194,
+    "fields": {
+      "question": 49,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 195,
+    "fields": {
+      "question": 49,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 196,
+    "fields": {
+      "question": 49,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  },
+  {
+    "model": "core.testquestion",
+    "pk": 50,
+    "fields": {
+      "test": 5,
+      "text": "I avoid conflict when possible."
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 197,
+    "fields": {
+      "question": 50,
+      "text": "Strongly Agree",
+      "score": 3
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 198,
+    "fields": {
+      "question": 50,
+      "text": "Agree",
+      "score": 2
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 199,
+    "fields": {
+      "question": 50,
+      "text": "Disagree",
+      "score": 1
+    }
+  },
+  {
+    "model": "core.testanswer",
+    "pk": 200,
+    "fields": {
+      "question": 50,
+      "text": "Strongly Disagree",
+      "score": 0
+    }
+  }
+]

@@ -1,0 +1,48 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="text-center" >
+       <div style=" font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+       color:rgb(17, 185, 246); font-size:80px">Welcome to DR HERE</div>
+        <div style=" font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+        color:rgb(99, 221, 255); font-size:30px; margin-top:0px;margin-bottom:30px">Your Offline-Online Health Companion</div>
+    </div>
+    <section class="hero">
+        <div class="hero-text-container">
+            <h1 class="hero-text">
+                GET THE TREATMENT YOU NEED,<br>
+                SEARCH FOR SPECIALIZED DOCTORS AND BOOK APPOINTMENTS ONLINE.
+            </h1>
+        </div>
+        <div class="hero-image-container">
+            <img src="{% static 'images/doctor.png' %}" alt="Doctor Illustration" class="hero-image">
+        </div>
+    </section>
+    <section id="features" class="section bg-blue-50 py-16 px-4 text-center rounded-md" style="    display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #b3e5fc, #81d4fa);
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); margin-top: 40px;">
+        <div class="container mx-auto"  >
+            <h1 class="text-2xl font-bold mb-8 text-blue-700" style=" margin-bottom:100px;color:white;">Key Features</h1>
+            <div  style=" width: 100%; height:100px;display: flex;justify-content: space-evenly;align-items: center;  ">
+                <div  style=" font-size:20px;width:600px;margin-right:20px; border-radius:20px; padding:20px 20px 20px 20px; background-color:rgb(49, 201, 49); color:white;">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-600">Find Specialized Doctors</h3>
+                    <p class="text-gray-700 text-center">Search for doctors by specialty, location, and condition.</p>
+                </div>
+                <div  style=" font-size:20px;margin-right:20px; border-radius:20px; padding:20px 20px 20px 20px;background-color:rgb(49, 201, 49); color:white;">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-600">Doctor Profiles</h3>
+                    <p class="text-gray-700 text-center">View detailed profiles with qualifications, experience, and reviews.</p>
+                </div>
+                <div  style=" font-size:20px;width:600px;margin-right:20px; border-radius:20px;padding:20px 20px 20px 20px;background-color:rgb(49, 201, 49); color:white;">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-600">Easy Appointment Booking</h3>
+                    <p >Book appointments online with your preferred doctor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

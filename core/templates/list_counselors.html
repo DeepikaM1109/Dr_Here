@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Our Counselors</h2>
+<ul class="list-group">
+    {% for counselor in counselors %}
+        <li class="list-group-item">
+            <strong>{{ counselor.name }}</strong><br>
+            Specialization: {{ counselor.specialization }}<br>
+            Experience: {{ counselor.experience }} years<br>
+            Contact: {{ counselor.contact }}
+        </li>
+    {% empty %}
+        <li class="list-group-item">No counselors available</li>
+    {% endfor %}
+</ul>
+{% endblock %}

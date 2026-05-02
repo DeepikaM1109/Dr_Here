@@ -1,0 +1,13 @@
+<!-- templates/core/test_result.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="card shadow p-4">
+        <h2 class="mb-3">Test Result: {{ test.name }}</h2>
+        <p><strong>Your Score:</strong> {{ result.score }}</p>
+        <p><strong>Assessment:</strong> {{ result.result_text }}</p>
+        <a href="{% url 'core:counseling_test_selection' %}" class="btn btn-secondary mt-3">Back to Tests</a>
+    </div>
+</div>
+{% endblock %}

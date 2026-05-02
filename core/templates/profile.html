@@ -1,0 +1,223 @@
+
+{% extends 'base.html' %}{% load static %}
+{% block content %}
+<style>
+    .container {
+    width: 100%;
+    margin: auto;
+   
+    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+   
+}
+img.profile-photo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+form {
+    margin-bottom: 30px;
+    border: 1px solid rgb(103, 220, 249);
+    background-color:rgb(255, 255, 255);
+    border-radius:10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding:20px;
+}
+.section {
+    margin-bottom: 40px;
+    border: 1px solid rgb(103, 220, 249);
+    background-color:rgb(255, 255, 255);
+    border-radius:10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding:20px;
+}
+.section h2 {
+    margin-bottom: 10px;
+    border-radius:25px;
+    padding-bottom: 5px;
+}
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+button {
+    padding: 10px 20px;
+    background-color:rgb(103, 220, 249);
+    border: 1px solid rgb(103, 220, 249); border-radius:25px;
+}
+table {
+    width: 100%;
+   
+    margin-top: 10px;
+   
+    background-color:rgb(255, 255, 255);
+    
+}
+table th{
+    background-color:rgb(103, 220, 249);
+}
+table th, table td {
+    padding: 8px;
+   
+  
+}
+.record-table {
+    width: 100%;
+    border-collapse: collapse;
+   
+    margin-top: 10px; 
+    background-color:rgb(255, 255, 255);
+}
+
+.record-table th, .record-table td {
+    padding: 10px;
+   
+   
+    text-align: left;
+}
+
+.record-table th {
+    background-color:rgb(103, 220, 249);
+}
+
+.record-table a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.record-table a:hover {
+    text-decoration: underline;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+</style>
+    
+    
+<div class="container">
+
+  
+    <!-- Profile Photo Section -->
+    <div class="section">
+       
+        {% if user_profile.photo %}
+            <img src="{{ user_profile.photo.url }}" alt="Profile Photo" class="profile-photo">  <h1> {{ user.username }}</h1>
+
+        {% else %}
+            <p>No profile photo uploaded yet.</p>
+        {% endif %}
+    </div>
+
+    <!-- Profile Update Form -->
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label>Change Profile Photo:</label><br>
+        {{ profile_form.photo }}
+        <button type="submit">Update Photo</button>
+    </form>
+    
+
+    <!-- Upload Medical Record -->
+   <!-- Medical Records -->
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ record_form.as_p }}
+    <button type="submit" name="upload_record">Upload Record</button>
+</form>
+
+<div class="section">
+    <h2>My Medical Records</h2>
+    {% if medical_records %}
+        <table class="record-table">
+            <tr>
+                <th>File</th>
+                <th>Description</th>
+                <th>Uploaded At</th>
+                <th>Action</th>
+            </tr>
+            {% for record in medical_records %}
+            <tr>
+                <td><a href="{{ record.file.url }}" target="_blank">{{ record.file.name|slice:"15:" }}</a></td>
+                <td>{{ record.description }}</td>
+                <td>{{ record.uploaded_at|date:"Y-m-d H:i" }}</td>
+                <td>
+                    <form method="post" action="{% url 'core:delete_medical_record' record.id %}">
+                        {% csrf_token %}
+                        <button type="submit" class="delete-btn">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No medical records uploaded yet.</p>
+    {% endif %}
+</div>
+
+    <!-- Appointments -->
+    <div class="section">
+        <h2>Appointment History</h2>
+        {% if appointments %}
+            <table>
+                <tr>
+                    <th>Doctor</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                </tr>
+                {% for appointment in appointments %}
+                <tr>
+                    <td>{{ appointment.doctor.name }}</td>
+                    <td>{{ appointment.appointment_date }}</td>
+                    <td>{{ appointment.time }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+            <p>No appointments found.</p>
+        {% endif %}
+    </div>
+
+    <!-- Test Results -->
+    <div class="section">
+        <h2>Mental Health Test Results</h2>
+        {% if test_results %}
+            <table>
+                <tr>
+                    <th>Test</th>
+                    <th>Score</th>
+                    <th>Result</th>
+                    <th>Date</th>
+                </tr>
+                {% for result in test_results %}
+                <tr>
+                    <td>{{ result.test.name }}</td>
+                    <td>{{ result.score }}</td>
+                    <td>{{ result.result_text }}</td>
+                    <td>{{ result.taken_at }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+            <p>No test results found.</p>
+        {% endif %}
+    </div>
+
+</div>
+{% endblock %}

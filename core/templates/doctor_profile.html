@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-5">
+  <div class="card p-4 shadow">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="https://via.placeholder.com/200" alt="Doctor Photo" class="img-fluid rounded">
+      </div>
+      <div class="col-md-8">
+        <h3>{{ doctor.name }}</h3>
+        <p><strong>Specialization:</strong> {{ doctor.specialization }}</p>
+        <p><strong>Qualification:</strong> MBBS, MD (Dummy)</p>
+        <p><strong>Experience:</strong> {{ doctor.id|add:2 }} years</p>
+        <p><strong>Working Hours:</strong> {{ doctor.working_hours }}</p>
+        <p><strong>Workplace:</strong> {{ doctor.workplace }}</p>
+        <p><strong>City:</strong> Random City</p>
+        <p><strong>Contact:</strong> doctor{{ doctor.id }}@example.com, +91-98765{{ doctor.id|stringformat:"04d" }}</p>
+        <p><strong>Bio:</strong> Dr. {{ doctor.name }} is a highly skilled {{ doctor.specialization }} with expertise in patient care and modern treatment methods.</p>
+        <hr>
+<h4>Patient Reviews</h4>
+{% if reviews %}
+  {% for review in reviews %}
+    <div class="mb-3">
+      <strong>{{ review.patient_name }}</strong> 
+      <span>⭐ {{ review.rating }}/5</span>
+      <p>{{ review.comment }}</p>
+      <small><em>{{ review.created_at|date:"F j, Y" }}</em></small>
+    </div>
+  {% endfor %}
+{% else %}
+  <p>No reviews yet.</p>
+{% endif %}
+
+        <a href="{% url 'core:book_appointment' doctor.id %}" class="btn btn-primary mt-3">Book Appointment</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
